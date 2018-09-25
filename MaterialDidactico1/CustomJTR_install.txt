@@ -1,0 +1,30 @@
+#Descargar ultimas actualizaciones
+apt-get update
+
+#Instalar prerequisitos para JTR, librerias...
+apt-get install build-essential libssl-dev yasm libgmp-dev libpcap-dev libnss3-dev libkrb5-dev pkg-config libopenmpi-dev openmpi-bin libbz2-dev
+
+#Instalar prerequisitos de rexgen
+apt-get install flex cmake bison git
+
+#Install rexgen (repo)
+cd /opt
+git clone https://github.com/teeshop/rexgen.git
+cd rexgen
+./install.sh
+ldconfig
+
+#Descargar JTR
+cd /opt
+git clone https://github.com/magnumripper/JohnTheRipper.git
+
+#Configurar JTR
+cd JohnTheRipper/src/
+./configure --enable-mpi
+
+#Compilar JTR
+make -s clean && make -sj4
+
+#Test JTR
+cd ../run
+./john --test

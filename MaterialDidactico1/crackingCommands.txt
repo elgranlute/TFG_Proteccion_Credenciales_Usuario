@@ -1,0 +1,12 @@
+#Commandos para crackear los hashes generados con MD5
+/opt/JohnTheRipper/run/./john --wordlist=/root/Desktop/JTR/rockyou.txt --format=Raw-md5 /root/Desktop/JTR/md5hashes.txt 
+/opt/JohnTheRipper/run/./john --wordlist=/root/Desktop/JTR/500passwords.txt --format=Raw-md5 /root/Desktop/JTR/md5hashes.txt
+
+#Commandos para crackear los hashes generados con MD5
+/opt/JohnTheRipper/run/./john --wordlist=/root/Desktop/JTR/rockyou.txt --format=Raw-SHA1 /root/Desktop/JTR/sha1hashes.txt 
+/opt/JohnTheRipper/run/./john --wordlist=/root/Desktop/JTR/500passwords.txt --format=Raw-SHA1 /root/Desktop/JTR/sha1hashes.txt 
+
+#Comando para ver los formatos que permite John the Ripper
+/opt/JohnTheRipper/run/./john --list=formats 
+
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+echo -n pass | sha1sum | awk '{print $1}'> sha1hashes.txt
+echo -n 123456 | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n pussy | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n dragon | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n qwerty | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n 696969 | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n shadow | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n abc123 | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n pass | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n fuckme | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n test | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n trustno1 | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n access | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n soccer | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n superman | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n asshole | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n fuckyou | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n jessica | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n wizard | sha1sum | awk '{print $1}'>> sha1hashes.txt
+echo -n biteme | sha1sum | awk '{print $1}'>> sha1hashes.txt

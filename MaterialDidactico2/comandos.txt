@@ -1,0 +1,18 @@
+#Crear usuarios
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+
+#Otorgar privilegios
+GRANT ALL PRIVILEGES ON ‘database’.’table’ TO ‘username’@’localhost’;
+GRANT ‘privilege’ ON ‘database’.’table’ TO ‘username’@’localhost’;
+
+#Hacer efectivos los privilegios
+FLUSH PRIVILEGES;
+
+#Modificar permisos en sistema UNIX
+chmod XYZ <path>
+chown ‘username’ <path> #chown ‘username’ <path> -R
+chgrp ‘groupname’ <path> #chgrp ‘groupname’ <path> -R
+
+#Leer usuarios y password
+sudo cat /etc/passwd
+sudo cat /etc/group

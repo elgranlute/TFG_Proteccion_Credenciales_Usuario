@@ -1,0 +1,21 @@
+#!/bin/bash
+echo -n pass | md5sum | awk '{print $1}'> md5hashes.txt
+echo -n 123456 | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n pussy | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n dragon | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n qwerty | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n 696969 | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n shadow | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n abc123 | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n pass | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n fuckme | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n test | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n trustno1 | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n access | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n soccer | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n superman | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n asshole | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n fuckyou | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n jessica | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n wizard | md5sum | awk '{print $1}'>> md5hashes.txt
+echo -n biteme | md5sum | awk '{print $1}'>> md5hashes.txt
